@@ -47,6 +47,7 @@ attrs = soup.find_all('a')
 
 ### Example 3
 All the addresses and balances a stored in sqlite3 that is integrated with Django project. You can also manage the data and add new data by accessing the admin page.
+
 Because the balance number is too long, there is an algorithm that divides huge number by small integer. The balance that we get from API is returned in wei, but we can convert it to ether as shown in the example. 
 ```
 ether = longDivision(longDivision(longDivision(address['balance'], 1000000), 1000000), 1000000)
